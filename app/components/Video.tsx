@@ -77,9 +77,10 @@ const Videos: FunctionComponent<TabProps> = ({language, navigation}) => {
       <Title
         style={{
           textAlign: 'center',
-          fontSize: 30,
+          fontSize: language === Language.BERBER ? 40 : 30,
           marginTop: 10,
           marginBottom: 20,
+          fontFamily: language === Language.BERBER ? globalStyles.arabic.fontFamily : undefined
         }}>
         {getTitle()}
       </Title>
@@ -88,7 +89,7 @@ const Videos: FunctionComponent<TabProps> = ({language, navigation}) => {
           flexGrow: 1,
           padding: 20,
         }}>
-        <Title style={{textAlign: 'center'}}>{language === Language.BERBER ? 'اوال ءي-واسّ' : 'awal i-wass'}</Title>
+        <Title style={{textAlign: 'center', fontFamily: language === Language.BERBER ? globalStyles.arabic.fontFamily : undefined, fontSize: language === Language.BERBER ? 30 : undefined}}>{language === Language.BERBER ? 'اوال ءي-واسّ' : 'awal i-wass'}</Title>
         <TouchableOpacity
           onPress={openAwalIwass}
           style={{
@@ -103,10 +104,10 @@ const Videos: FunctionComponent<TabProps> = ({language, navigation}) => {
             resizeMode="contain"
           />
         </TouchableOpacity>
-        <Paragraph style={{textAlign: 'center', marginBottom: 10}}>
+        <Paragraph style={{textAlign: 'center', marginBottom: 10, fontFamily: language === Language.BERBER ? globalStyles.arabic.fontFamily : undefined, fontSize: language === Language.BERBER ? 20 : undefined}}>
           {getDescription()}
         </Paragraph>
-        <Title style={{textAlign: 'center', marginTop: 20}}>
+        <Title style={{textAlign: 'center', marginTop: 20, fontFamily: language === Language.BERBER ? globalStyles.arabic.fontFamily : undefined, fontSize: language === Language.BERBER ? 30 : undefined}}>
           {language === Language.BERBER ? 'تاشلحيت ءينفو' : 'tachelhit info'}
         </Title>
         <TouchableOpacity

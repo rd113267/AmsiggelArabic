@@ -7,6 +7,7 @@ import colors from '../colors';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {downloadLink} from '../helpers';
 import {Button, Title, ActivityIndicator} from 'react-native-paper';
+import globalStyles from '../styles/globalStyles';
 
 const image1 = require('../images/audio9.jpg');
 const image2 = require('../images/audio10.jpg');
@@ -136,8 +137,9 @@ const Story: FunctionComponent<TabProps> = ({language}) => {
       <Title
         style={{
           textAlign: 'center',
-          fontSize: 30,
+          fontSize: language === Language.BERBER ? 40 : 30,
           marginTop: 10,
+          fontFamily: language === Language.BERBER ? globalStyles.arabic.fontFamily : undefined
         }}>
         {getTitle()}
       </Title>
@@ -162,7 +164,7 @@ const Story: FunctionComponent<TabProps> = ({language}) => {
         </View>
         {language === Language.BERBER && (
           <>
-            <Title style={{alignSelf: 'center', marginBottom: 10}}>
+            <Title style={{alignSelf: 'center', marginBottom: 10, fontFamily: globalStyles.arabic.fontFamily, fontSize: 30}}>
             امودّو ن-ومسيگّل
             </Title>
             {berberLinks.map((link, index) => {
@@ -314,7 +316,7 @@ const Story: FunctionComponent<TabProps> = ({language}) => {
 
         {language === Language.BERBER && (
           <>
-            <Title style={{alignSelf: 'center', marginBottom: 10}}>
+            <Title style={{alignSelf: 'center', marginBottom: 10, fontFamily: globalStyles.arabic.fontFamily, fontSize: 30}}>
             امسيگّل د-بوبكر
             </Title>
             {berberPDFs.map((link, index) => {

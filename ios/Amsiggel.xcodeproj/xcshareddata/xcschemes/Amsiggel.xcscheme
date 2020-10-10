@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "Amsiggel.app"
+               BuildableName = "&#x627;&#x645;&#x633;&#x64a;&#x6af;&#x651;&#x644;.app"
                BlueprintName = "Amsiggel"
                ReferencedContainer = "container:Amsiggel.xcodeproj">
             </BuildableReference>
@@ -55,7 +55,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Amsiggel.app"
+            BuildableName = "&#x627;&#x645;&#x633;&#x64a;&#x6af;&#x651;&#x644;.app"
             BlueprintName = "Amsiggel"
             ReferencedContainer = "container:Amsiggel.xcodeproj">
          </BuildableReference>
@@ -72,7 +72,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Amsiggel.app"
+            BuildableName = "&#x627;&#x645;&#x633;&#x64a;&#x6af;&#x651;&#x644;.app"
             BlueprintName = "Amsiggel"
             ReferencedContainer = "container:Amsiggel.xcodeproj">
          </BuildableReference>

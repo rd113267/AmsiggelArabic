@@ -3,6 +3,7 @@ import {SafeAreaView, Linking, Platform, Alert} from 'react-native';
 import TabProps from '../types/TabProps';
 import {Button} from 'react-native-paper';
 import {Language} from '../types';
+import globalStyles from '../styles/globalStyles';
 
 const Contact: FunctionComponent<TabProps> = ({language}) => {
   const [loading, setLoading] = useState(false);
@@ -36,7 +37,7 @@ const Contact: FunctionComponent<TabProps> = ({language}) => {
         uppercase={false}
         loading={loading}
         icon="whatsapp"
-        labelStyle={{ fontSize: 20 }}
+        labelStyle={{ fontFamily: language === Language.BERBER ? globalStyles.arabic.fontFamily : undefined, fontSize: 20 }}
         onPress={openWhatsApp}
         mode="contained">
         {language === Language.BERBER ? 'ساول-اغ-د س-واتساب' : 'sawl-agh-d s-watsapp'}

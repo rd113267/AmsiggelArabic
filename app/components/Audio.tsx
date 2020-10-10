@@ -5,6 +5,7 @@ import {getAudioLinks, getAudioLinkText, downloadLink} from '../helpers';
 import {Button, Headline, Title} from 'react-native-paper';
 import styles from '../styles/components/Audio';
 import {Language} from '../types';
+import globalStyles from '../styles/globalStyles';
 
 const image1 = require('../images/audio1.jpg');
 const image2 = require('../images/audio2.jpg');
@@ -30,8 +31,9 @@ const Audio: FunctionComponent<TabProps> = ({language}) => {
       <Title
         style={{
           textAlign: 'center',
-          fontSize: 30,
+          fontSize: language === Language.BERBER ? 40 : 30,
           marginTop: 20,
+          fontFamily: language === Language.BERBER ? globalStyles.arabic.fontFamily : undefined
         }}>
         {language === Language.BERBER ? 'سفلد-اس' : 'audio'}
       </Title>
@@ -50,7 +52,7 @@ const Audio: FunctionComponent<TabProps> = ({language}) => {
         </View>
         <Button
           style={styles.button}
-          labelStyle={{fontSize: 20}}
+          labelStyle={{fontSize: 20, fontFamily: language === Language.BERBER ? globalStyles.arabic.fontFamily : undefined}}
           icon="download"
           mode="contained"
           uppercase={false}
@@ -102,7 +104,7 @@ const Audio: FunctionComponent<TabProps> = ({language}) => {
             }}
             loading={downloadingSecondary}
             uppercase={false}
-            labelStyle={{fontSize: 20}}
+            labelStyle={{fontSize: 20, fontFamily: globalStyles.arabic.fontFamily }}
             style={{margin: 20, marginVertical: 10}}>
             امسيگّل د-بوبكر
           </Button>
