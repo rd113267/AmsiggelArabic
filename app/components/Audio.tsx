@@ -33,7 +33,7 @@ const Audio: FunctionComponent<TabProps> = ({language}) => {
           fontSize: 30,
           marginTop: 20,
         }}>
-        audio
+        {language === Language.BERBER ? 'سفلد-اس' : 'audio'}
       </Title>
       <View style={{flex: 1, justifyContent: 'center'}}>
         <View style={{flexDirection: 'row'}}>
@@ -104,7 +104,7 @@ const Audio: FunctionComponent<TabProps> = ({language}) => {
             uppercase={false}
             labelStyle={{fontSize: 20}}
             style={{margin: 20, marginVertical: 10}}>
-            Amsiggel d-Bubker (audio)
+            امسيگّل د-بوبكر
           </Button>
         )}
       </View>

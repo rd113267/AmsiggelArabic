@@ -68,7 +68,7 @@ export const getAudioLinkText = (language?: string): {fullText: string} => {
     }
     default:
       return {
-        fullText: 'Amuddu n-Umsiggel (audio)',
+        fullText: 'امودّو ن-ومسيگّل',
       };
   }
 };

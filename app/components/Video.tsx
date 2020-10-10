@@ -24,7 +24,7 @@ const Videos: FunctionComponent<TabProps> = ({language, navigation}) => {
     if (language === Language.FRENCH) {
       return "Chaque jour, nous vous enverrons une parole d'espoir et d'assurance tirée de la Bible en tachelhit.";
     }
-    return 'ass f-wass rad-ak-ntazn awal imimn gh-warratn n-sidi rbbi. sfeld-as ar-ttzaamt s-rrja ishan.';
+    return 'اسّ ف-واسّ راد-اك-نتازن اوال ءيميمن غ-وارّاتن ن-سيدي ربّي. سفلد-اس ار-تّزاعمت س-رّجا ءيصحان';
   };
   const openAwalIwass = async () => {
     try {
@@ -49,7 +49,7 @@ const Videos: FunctionComponent<TabProps> = ({language, navigation}) => {
     if (language === Language.FRENCH) {
       return 'liens';
     }
-    return 'izdayn';
+    return 'ءيزداين';
   };
 
   const openTachelhitApp = async () => {
@@ -88,7 +88,7 @@ const Videos: FunctionComponent<TabProps> = ({language, navigation}) => {
           flexGrow: 1,
           padding: 20,
         }}>
-        <Title style={{textAlign: 'center'}}>awal i-wass</Title>
+        <Title style={{textAlign: 'center'}}>{language === Language.BERBER ? 'اوال ءي-واسّ' : 'awal i-wass'}</Title>
         <TouchableOpacity
           onPress={openAwalIwass}
           style={{
@@ -107,7 +107,7 @@ const Videos: FunctionComponent<TabProps> = ({language, navigation}) => {
           {getDescription()}
         </Paragraph>
         <Title style={{textAlign: 'center', marginTop: 20}}>
-          tachelhit info
+          {language === Language.BERBER ? 'تاشلحيت ءينفو' : 'tachelhit info'}
         </Title>
         <TouchableOpacity
           onPress={openTachelhitApp}

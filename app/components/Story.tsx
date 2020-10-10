@@ -64,7 +64,7 @@ const Story: FunctionComponent<TabProps> = ({language}) => {
     if (language === Language.FRENCH) {
       return 'textes';
     }
-    return 'arratn ';
+    return 'ارّاتن';
   };
 
   const downloadBerberPrimary = async (link: string, index: number) => {
@@ -163,7 +163,7 @@ const Story: FunctionComponent<TabProps> = ({language}) => {
         {language === Language.BERBER && (
           <>
             <Title style={{alignSelf: 'center', marginBottom: 10}}>
-              Amuddu n-Umsiggel
+            امودّو ن-ومسيگّل
             </Title>
             {berberLinks.map((link, index) => {
               return (
@@ -315,7 +315,7 @@ const Story: FunctionComponent<TabProps> = ({language}) => {
         {language === Language.BERBER && (
           <>
             <Title style={{alignSelf: 'center', marginBottom: 10}}>
-              Amsiggel d-Bubker
+            امسيگّل د-بوبكر
             </Title>
             {berberPDFs.map((link, index) => {
               return (

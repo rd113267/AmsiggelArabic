@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "260318914971",
-    "firebase_url": "https://amsiggel.firebaseio.com",
-    "project_id": "amsiggel",
-    "storage_bucket": "amsiggel.appspot.com"
+    "project_number": "442553397168",
+    "firebase_url": "https://amsiggel-arabic.firebaseio.com",
+    "project_id": "amsiggel-arabic",
+    "storage_bucket": "amsiggel-arabic.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:260318914971:android:629e4f8c2ec312dc13993e",
+        "mobilesdk_app_id": "1:442553397168:android:7d6128dfc508f251ac7075",
         "android_client_info": {
-          "package_name": "com.amsiggel"
+          "package_name": "com.amsiggel.arabic"
         }
       },
       "oauth_client": [
         {
-          "client_id": "260318914971-vn1v6h7115n84u7e1drge0oisc3afmqd.apps.googleusercontent.com",
+          "client_id": "442553397168-en8s23hqtnvgs7ogpkbknf2vf3ejdrlr.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBQ6fFSVO0MplJ7WyfEu-NSX2_E0XlhNZc"
+          "current_key": "AIzaSyCAvGO1vR3V4guDE8mazM5nBvOlTDdsWlI"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "260318914971-vn1v6h7115n84u7e1drge0oisc3afmqd.apps.googleusercontent.com",
+              "client_id": "442553397168-en8s23hqtnvgs7ogpkbknf2vf3ejdrlr.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

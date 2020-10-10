@@ -131,7 +131,7 @@ android {
 
 
     defaultConfig {
-        applicationId "com.amsiggel"
+        applicationId "com.amsiggel.arabic"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 12
@@ -154,11 +154,11 @@ android {
             keyPassword 'android'
         }
         release {
-            if (project.hasProperty('AMSIGGEL_UPLOAD_STORE_FILE')) {
-                storeFile file(AMSIGGEL_UPLOAD_STORE_FILE)
-                storePassword AMSIGGEL_UPLOAD_STORE_PASSWORD
-                keyAlias AMSIGGEL_KEY_ALIAS
-                keyPassword AMSIGGEL_UPLOAD_KEY_PASSWORD
+            if (project.hasProperty('AMSIGGEL_ARABIC_UPLOAD_STORE_FILE')) {
+                storeFile file(AMSIGGEL_ARABIC_UPLOAD_STORE_FILE)
+                storePassword AMSIGGEL_ARABIC_UPLOAD_STORE_PASSWORD
+                keyAlias AMSIGGEL_ARABIC_KEY_ALIAS
+                keyPassword AMSIGGEL_ARABIC_UPLOAD_KEY_PASSWORD
             }
         }
     }

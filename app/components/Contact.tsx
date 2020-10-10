@@ -39,7 +39,7 @@ const Contact: FunctionComponent<TabProps> = ({language}) => {
         labelStyle={{ fontSize: 20 }}
         onPress={openWhatsApp}
         mode="contained">
-        sawl-agh-d s-watsapp
+        {language === Language.BERBER ? 'ساول-اغ-د س-واتساب' : 'sawl-agh-d s-watsapp'}
       </Button>
       
     </SafeAreaView>

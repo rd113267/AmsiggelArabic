@@ -64,7 +64,7 @@
 		0A7A661724A93CC800DA2818 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
 		0A7A661824A93CC800DA2818 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
 		10FC1A8721095BD7F71FAE20 /* Pods-Amsiggel-AmsiggelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amsiggel-AmsiggelTests.release.xcconfig"; path = "Target Support Files/Pods-Amsiggel-AmsiggelTests/Pods-Amsiggel-AmsiggelTests.release.xcconfig"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* Amsiggel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Amsiggel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* امسيگّل.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "امسيگّل.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Amsiggel/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Amsiggel/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -239,7 +239,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* Amsiggel.app */,
+				13B07F961A680F5B00A75B9A /* امسيگّل.app */,
 				00E356EE1AD99517003FC87E /* AmsiggelTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* Amsiggel-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* Amsiggel-tvOSTests.xctest */,
@@ -333,7 +333,7 @@
 			);
 			name = Amsiggel;
 			productName = Amsiggel;
-			productReference = 13B07F961A680F5B00A75B9A /* Amsiggel.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* امسيگّل.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2D02E47A1E0B4A5D006451C7 /* Amsiggel-tvOS */ = {
@@ -879,8 +879,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.amsiggel;
-				PRODUCT_NAME = Amsiggel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amsiggel.arabic;
+				PRODUCT_NAME = "امسيگّل";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -907,8 +907,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.amsiggel;
-				PRODUCT_NAME = Amsiggel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amsiggel.arabic;
+				PRODUCT_NAME = "امسيگّل";
 				PROVISIONING_PROFILE_SPECIFIER = "Amsiggel Distribution";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

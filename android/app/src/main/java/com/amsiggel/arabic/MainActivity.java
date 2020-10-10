@@ -1,4 +1,4 @@
-package com.amsiggel;
+package com.amsiggel.arabic;
 
 import android.content.Intent;
 import android.content.res.Configuration;
