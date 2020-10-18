@@ -138,7 +138,7 @@ const Story: FunctionComponent<TabProps> = ({language}) => {
         style={{
           textAlign: 'center',
           fontSize: language === Language.BERBER ? 40 : 30,
-          marginTop: 10,
+          marginTop: 20,
           fontFamily: language === Language.BERBER ? globalStyles.arabic.fontFamily : undefined
         }}>
         {getTitle()}
@@ -164,7 +164,7 @@ const Story: FunctionComponent<TabProps> = ({language}) => {
         </View>
         {language === Language.BERBER && (
           <>
-            <Title style={{alignSelf: 'center', marginBottom: 10, fontFamily: globalStyles.arabic.fontFamily, fontSize: 30}}>
+            <Title style={{alignSelf: 'center', marginVertical: 10, fontFamily: globalStyles.arabic.fontFamily, fontSize: 30}}>
             امودّو ن-ومسيگّل
             </Title>
             {berberLinks.map((link, index) => {
@@ -316,7 +316,7 @@ const Story: FunctionComponent<TabProps> = ({language}) => {
 
         {language === Language.BERBER && (
           <>
-            <Title style={{alignSelf: 'center', marginBottom: 10, fontFamily: globalStyles.arabic.fontFamily, fontSize: 30}}>
+            <Title style={{alignSelf: 'center', marginVertical: 10, fontFamily: globalStyles.arabic.fontFamily, fontSize: 30}}>
             امسيگّل د-بوبكر
             </Title>
             {berberPDFs.map((link, index) => {

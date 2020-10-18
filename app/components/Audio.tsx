@@ -52,7 +52,7 @@ const Audio: FunctionComponent<TabProps> = ({language}) => {
         </View>
         <Button
           style={styles.button}
-          labelStyle={{fontSize: 20, fontFamily: language === Language.BERBER ? globalStyles.arabic.fontFamily : undefined}}
+          labelStyle={{fontSize: language === Language.BERBER ? 22 : 20, fontFamily: language === Language.BERBER ? globalStyles.arabic.fontFamily : undefined}}
           icon="download"
           mode="contained"
           uppercase={false}
@@ -104,7 +104,7 @@ const Audio: FunctionComponent<TabProps> = ({language}) => {
             }}
             loading={downloadingSecondary}
             uppercase={false}
-            labelStyle={{fontSize: 20, fontFamily: globalStyles.arabic.fontFamily }}
+            labelStyle={{fontSize: 22, fontFamily: globalStyles.arabic.fontFamily }}
             style={{margin: 20, marginVertical: 10}}>
             امسيگّل د-بوبكر
           </Button>
