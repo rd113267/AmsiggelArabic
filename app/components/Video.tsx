@@ -34,7 +34,7 @@ const Videos: FunctionComponent<TabProps> = ({language, navigation}) => {
         );
       } else {
         await Linking.openURL(
-          'https://play.google.com/store/apps/details?id=com.wordofgodforeachday',
+          `https://play.google.com/store/apps/details?id=com.wordofgodforeachday${language === Language.BERBER ? '.arabic' : ''}`,
         );
       }
     } catch (e) {
@@ -60,7 +60,7 @@ const Videos: FunctionComponent<TabProps> = ({language, navigation}) => {
         );
       } else {
         await Linking.openURL(
-          'https://play.google.com/store/apps/details?id=com.tachelhitinfo',
+          `https://play.google.com/store/apps/details?id=com.tachelhitinfo${language === Language.BERBER ? '.arabic' : ''}`,
         );
       }
     } catch (e) {
