@@ -26,6 +26,17 @@ const Videos: FunctionComponent<TabProps> = ({language, navigation}) => {
     }
     return 'اسّ ف-واسّ راد-اك-نتازن اوال ءيميمن غ-وارّاتن ن-سيدي ربّي. سفلد-اس ار-تّزاعمت س-رّجا ءيصحان';
   };
+
+  const getDescription2 = () => {
+    if (language === Language.ENGLISH) {
+      return 'Enjoy our storehouse of spiritual treasures – videos, audios, downloads – the word of God with helpful teaching in Tashelhayt.';
+    }
+    if (language === Language.FRENCH) {
+      return 'Entrez dans notre maison de trésors spirituels - vidéos, audios, téléchargements – la parole de Dieu avec des enseignements encourageants en tachelhit.';
+    }
+    return 'كشم س-تگمّي-نغ تسونفوت، ار-تسفليدت ءي-لخبار ءيسّفراحن، ار-تاقرات ءيواليون ميمنين، ار-تسّموقولت لفيديوات فولكينين.';
+  };
+  
   const openAwalIwass = async () => {
     try {
       if (Platform.OS === 'ios') {
@@ -109,6 +120,7 @@ const Videos: FunctionComponent<TabProps> = ({language, navigation}) => {
         <Title style={{textAlign: 'center', marginTop: 20, fontFamily: language === Language.BERBER ? globalStyles.arabic.fontFamily : undefined, fontSize: language === Language.BERBER ? 32 : undefined}}>
           {language === Language.BERBER ? 'تاشلحيت ءينفو' : 'tachelhit info'}
         </Title>
+        
         <TouchableOpacity
           onPress={openTachelhitApp}
           style={{
@@ -137,6 +149,9 @@ const Videos: FunctionComponent<TabProps> = ({language, navigation}) => {
             resizeMode="contain"
           />
         </TouchableOpacity>
+        <Paragraph style={{textAlign: 'center', marginBottom: 10, fontFamily: language === Language.BERBER ? globalStyles.arabic.fontFamily : undefined, fontSize: language === Language.BERBER ? 22 : undefined}}>
+          {getDescription2()}
+        </Paragraph>
       </ScrollView>
     </SafeAreaView>
   );
