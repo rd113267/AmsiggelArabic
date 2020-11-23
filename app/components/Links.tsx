@@ -32,7 +32,10 @@ const Links: FunctionComponent<TabProps> = ({language, navigation}) => {
     if (language === Language.FRENCH) {
       return 'Entrez dans notre maison de trésors spirituels - vidéos, audios, téléchargements – la parole de Dieu avec des enseignements encourageants en tachelhit.';
     }
-    return 'كشم س-تگمّي-نغ تسونفوت، ار-تسفليدت ءي-لخبار ءيسّفراحن، ار-تاقرات ءيواليون ميمنين، ار-تسّموقولت لفيديوات فولكينين.';
+    return `كشم س-تگمّي-نغ تسونفوت،
+    ار-تسفليدت ءي-لخبار ءيسّفراحن،
+    ار-تاقرات ءيواليون ميمنين،
+    ار-تسّموقولت لفيديوات فولكينين.`;
   };
 
   const openAwalIwass = async () => {
@@ -111,11 +114,12 @@ const Links: FunctionComponent<TabProps> = ({language, navigation}) => {
         style={{
           textAlign: 'center',
           fontSize: language === Language.BERBER ? 40 : 30,
-          marginTop: 20,
+          marginVertical: 20,
           fontFamily:
             language === Language.BERBER
               ? globalStyles.arabic.fontFamily
               : undefined,
+          paddingTop: language === Language.BERBER ? 10 : 0
         }}>
         {getTitle()}
       </Title>
@@ -157,8 +161,10 @@ const Links: FunctionComponent<TabProps> = ({language, navigation}) => {
               language === Language.BERBER
                 ? globalStyles.arabic.fontFamily
                 : undefined,
-            fontSize: language === Language.BERBER ? 22 : undefined,
+            fontSize: language === Language.BERBER ? 24 : undefined,
+            paddingTop: language === Language.BERBER ? 20 : 0
           }}>
+            
           {getDescription()}
         </Paragraph>
         <Title
@@ -205,12 +211,12 @@ const Links: FunctionComponent<TabProps> = ({language, navigation}) => {
         <Paragraph
           style={{
             textAlign: 'center',
-            marginBottom: 10,
             fontFamily:
               language === Language.BERBER
                 ? globalStyles.arabic.fontFamily
                 : undefined,
-            fontSize: language === Language.BERBER ? 22 : undefined,
+            fontSize: language === Language.BERBER ? 24 : undefined,
+            paddingTop: language === Language.BERBER ? 20 : 0,
           }}>
           {getDescription2()}
         </Paragraph>
