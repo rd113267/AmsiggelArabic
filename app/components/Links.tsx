@@ -58,7 +58,7 @@ const Links: FunctionComponent<TabProps> = ({language, navigation}) => {
 
   const getTitle = () => {
     if (language === Language.ENGLISH) {
-      return 'links';
+      return 'Free offers';
     }
     if (language === Language.FRENCH) {
       return 'liens';
@@ -68,7 +68,7 @@ const Links: FunctionComponent<TabProps> = ({language, navigation}) => {
 
   const getSubtitle1 = () => {
     if (language === Language.ENGLISH) {
-      return 'awal i-wass advertisement';
+      return 'awal i-wass';
     }
     if (language === Language.FRENCH) {
       return 'awal i-wass';
@@ -78,7 +78,7 @@ const Links: FunctionComponent<TabProps> = ({language, navigation}) => {
 
   const getSubtitle2 = () => {
     if (language === Language.ENGLISH) {
-      return 'tachelhit info advertisement';
+      return 'tachelhit info';
     }
     if (language === Language.FRENCH) {
       return 'tachelhit info';
@@ -114,12 +114,12 @@ const Links: FunctionComponent<TabProps> = ({language, navigation}) => {
         style={{
           textAlign: 'center',
           fontSize: language === Language.BERBER ? 40 : 30,
-          marginVertical: 20,
+          marginTop: 20,
           fontFamily:
             language === Language.BERBER
               ? globalStyles.arabic.fontFamily
               : undefined,
-          paddingTop: language === Language.BERBER ? 10 : 0
+          paddingTop: language === Language.BERBER ? 10 : 0,
         }}>
         {getTitle()}
       </Title>
@@ -135,7 +135,7 @@ const Links: FunctionComponent<TabProps> = ({language, navigation}) => {
               language === Language.BERBER
                 ? globalStyles.arabic.fontFamily
                 : undefined,
-            fontSize: language === Language.BERBER ? 32 : undefined,
+            fontSize: language === Language.BERBER ? 32 : 20,
           }}>
           {getSubtitle1()}
         </Title>
@@ -162,9 +162,8 @@ const Links: FunctionComponent<TabProps> = ({language, navigation}) => {
                 ? globalStyles.arabic.fontFamily
                 : undefined,
             fontSize: language === Language.BERBER ? 24 : undefined,
-            paddingTop: language === Language.BERBER ? 20 : 0
+            paddingTop: language === Language.BERBER ? 10 : 0,
           }}>
-            
           {getDescription()}
         </Paragraph>
         <Title
@@ -175,7 +174,7 @@ const Links: FunctionComponent<TabProps> = ({language, navigation}) => {
               language === Language.BERBER
                 ? globalStyles.arabic.fontFamily
                 : undefined,
-            fontSize: language === Language.BERBER ? 32 : undefined,
+            fontSize: language === Language.BERBER ? 32 : 20,
           }}>
           {getSubtitle2()}
         </Title>
@@ -216,7 +215,7 @@ const Links: FunctionComponent<TabProps> = ({language, navigation}) => {
                 ? globalStyles.arabic.fontFamily
                 : undefined,
             fontSize: language === Language.BERBER ? 24 : undefined,
-            paddingTop: language === Language.BERBER ? 20 : 0,
+            paddingTop: language === Language.BERBER ? 10 : 0,
           }}>
           {getDescription2()}
         </Paragraph>
