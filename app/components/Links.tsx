@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
   Alert,
   ScrollView,
+  View,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import TabProps from '../types/TabProps';
@@ -58,7 +59,7 @@ const Links: FunctionComponent<TabProps> = ({language, navigation}) => {
 
   const getTitle = () => {
     if (language === Language.ENGLISH) {
-      return 'Free offers';
+      return 'More apps';
     }
     if (language === Language.FRENCH) {
       return 'liens';
@@ -139,20 +140,21 @@ const Links: FunctionComponent<TabProps> = ({language, navigation}) => {
           }}>
           {getSubtitle1()}
         </Title>
-        <TouchableOpacity
-          onPress={openAwalIwass}
+        <View
           style={{
             marginVertical: 10,
             flexDirection: 'row',
             justifyContent: 'space-evenly',
           }}>
           <Icon name="cellphone-android" size={75} />
-          <Image
-            source={require('../images/logo.png')}
-            style={{height: 75, width: 75}}
-            resizeMode="contain"
-          />
-        </TouchableOpacity>
+          <TouchableOpacity onPress={openAwalIwass}>
+            <Image
+              source={require('../images/logo.png')}
+              style={{height: 75, width: 75}}
+              resizeMode="contain"
+            />
+          </TouchableOpacity>
+        </View>
         <Paragraph
           style={{
             textAlign: 'center',
@@ -179,34 +181,36 @@ const Links: FunctionComponent<TabProps> = ({language, navigation}) => {
           {getSubtitle2()}
         </Title>
 
-        <TouchableOpacity
-          onPress={openTachelhitApp}
+        <View
           style={{
             marginVertical: 10,
             flexDirection: 'row',
             justifyContent: 'space-evenly',
           }}>
           <Icon name="cellphone-android" size={75} />
-          <Image
-            source={require('../images/tachelhitinfo.png')}
-            style={{height: 75, width: 75}}
-            resizeMode="contain"
-          />
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={openTachelhitWebsite}
+          <TouchableOpacity onPress={openTachelhitApp}>
+            <Image
+              source={require('../images/tachelhitinfo.png')}
+              style={{height: 75, width: 75}}
+              resizeMode="contain"
+            />
+          </TouchableOpacity>
+        </View>
+        <View
           style={{
             marginVertical: 10,
             flexDirection: 'row',
             justifyContent: 'space-evenly',
           }}>
           <Icon name="monitor" size={75} />
-          <Image
-            source={require('../images/tachelhitinfo.png')}
-            style={{height: 75, width: 75}}
-            resizeMode="contain"
-          />
-        </TouchableOpacity>
+          <TouchableOpacity onPress={openTachelhitWebsite}>
+            <Image
+              source={require('../images/tachelhitinfo.png')}
+              style={{height: 75, width: 75}}
+              resizeMode="contain"
+            />
+          </TouchableOpacity>
+        </View>
         <Paragraph
           style={{
             textAlign: 'center',
