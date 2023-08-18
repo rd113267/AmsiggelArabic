@@ -146,7 +146,7 @@ const Links: FunctionComponent<TabProps> = ({language, navigation}) => {
             flexDirection: 'row',
             justifyContent: 'space-evenly',
           }}>
-          <Icon name="cellphone-android" size={75} />
+          <Icon name="cellphone" size={75} />
           <TouchableOpacity onPress={openAwalIwass}>
             <Image
               source={require('../images/logo.png')}
@@ -187,7 +187,7 @@ const Links: FunctionComponent<TabProps> = ({language, navigation}) => {
             flexDirection: 'row',
             justifyContent: 'space-evenly',
           }}>
-          <Icon name="cellphone-android" size={75} />
+          <Icon name="cellphone" size={75} />
           <TouchableOpacity onPress={openTachelhitApp}>
             <Image
               source={require('../images/tachelhitinfo.png')}

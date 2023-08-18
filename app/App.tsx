@@ -16,6 +16,7 @@ import FlagBanner from './components/commons/FlagBanner';
 import Orientation from 'react-native-orientation-locker';
 import {VideoDetails, Language} from './types';
 import Legal from './components/Legal';
+import { gestureHandlerRootHOC } from 'react-native-gesture-handler';
 
 export type RootStackParamList = {
   Tabs: undefined;
@@ -64,11 +65,12 @@ const App = () => {
   const Tabs = () => {
     return (
       <Tab.Navigator
-        tabBarOptions={{
-          activeTintColor: colors.secondary,
-          inactiveTintColor: '#fff',
-          style: {backgroundColor: colors.primary},
-          showLabel: false,
+        screenOptions={{
+          tabBarActiveTintColor: colors.secondary,
+          tabBarInactiveTintColor: '#fff',
+          tabBarStyle: {backgroundColor: colors.primary, display: fullscreen ? 'none' : 'flex'},
+          tabBarShowLabel: false,
+          headerShown: false,
         }}>
         <Tab.Screen
           name="Home"
@@ -81,6 +83,7 @@ const App = () => {
               navigation={navigation}
             />
           )}
+          
           options={(route) => ({
             tabBarVisible: !fullscreen,
             tabBarIcon: ({focused, color, size}) => (
@@ -214,4 +217,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default gestureHandlerRootHOC(App);

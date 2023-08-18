@@ -1,8 +1,7 @@
 import React, {FunctionComponent, useState} from 'react';
-import {Text, View, Image, SafeAreaView, ScrollView} from 'react-native';
+import {Text, View, Image, SafeAreaView, ScrollView, TouchableOpacity} from 'react-native';
 import TabProps from '../types/TabProps';
 import {Language} from '../types';
-import {TouchableOpacity} from 'react-native-gesture-handler';
 import colors from '../colors';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {downloadLink} from '../helpers';
