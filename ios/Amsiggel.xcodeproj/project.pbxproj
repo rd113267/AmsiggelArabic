@@ -105,6 +105,7 @@
 		EE280C2CDC4D4B07B9F2C60E /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		F548711091C920F5E2693025 /* Pods-Amsiggel-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amsiggel-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Amsiggel-tvOSTests/Pods-Amsiggel-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F6ED7D57786C4D9AA9B32C63 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = RnDiffApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +180,7 @@
 				0A7A661624A93CC800DA2818 /* EvilIcons.ttf */,
 				0A7A661724A93CC800DA2818 /* SimpleLineIcons.ttf */,
 				0A7A661824A93CC800DA2818 /* MaterialIcons.ttf */,
+				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
 			);
 			name = Fonts;
 			path = "../node_modules/react-native-vector-icons/Fonts";

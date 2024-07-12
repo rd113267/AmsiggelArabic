@@ -1,45 +1,18 @@
 import {Alert, Platform, Linking} from 'react-native';
-import {Language, VideoDetails} from './types';
+import {Language} from './types';
 import constants from './constants';
 import RNFetchBlob from 'rn-fetch-blob';
 import Share from 'react-native-share';
 import {request, PERMISSIONS} from 'react-native-permissions';
 
-export const getVideoDetails = async (id: string): Promise<VideoDetails> => {
-  try {
-    const res = await fetch(`https://player.vimeo.com/video/${id}/config`);
-    const {video, request} = await res.json();
-    return {
-      thumbnailUrl: video.thumbs['640'],
-      //videoUrl: request.files.hls.cdns[request.files.hls.default_cdn].url,
-      videoUrl: request.files.progressive[0].url,
-      video,
-    };
-  } catch (e) {
-    Alert.alert('Error', e.message);
-    return {thumbnailUrl: '', videoUrl: '', video: {}};
-  }
-};
-
-export const getHomeVideoID = (language: string) => {
+export const getVideoURLs = (language: string) => {
   switch (language) {
     case Language.ENGLISH:
-      return constants.ENGLISH_VIMEO_CODE;
+      return constants.ENGLISH_VIMEO_URLS;
     case Language.FRENCH:
-      return constants.FRENCH_VIMEO_CODE;
+      return constants.FRENCH_VIMEO_URLS;
     default:
-      return constants.BERBER_VIMEO_CODE;
-  }
-};
-
-export const getVideoIDs = (language: string) => {
-  switch (language) {
-    case Language.ENGLISH:
-      return constants.ENGLISH_VIMEO_CODES;
-    case Language.FRENCH:
-      return constants.FRENCH_VIMEO_CODES;
-    default:
-      return constants.BERBER_VIMEO_CODES;
+      return constants.BERBER_VIMEO_URLS;
   }
 };
 
