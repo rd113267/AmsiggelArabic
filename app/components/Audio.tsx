@@ -1,11 +1,12 @@
 import React, {FunctionComponent, useState} from 'react';
-import {View, Image, SafeAreaView} from 'react-native';
+import {View, Image} from 'react-native';
 import TabProps from '../types/TabProps';
 import {getAudioLinks, getAudioLinkText, downloadLink} from '../helpers';
 import {Button, Headline, Title} from 'react-native-paper';
 import styles from '../styles/components/Audio';
 import {Language} from '../types';
 import globalStyles from '../styles/globalStyles';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const image1 = require('../images/audio1.jpg');
 const image2 = require('../images/audio2.jpg');

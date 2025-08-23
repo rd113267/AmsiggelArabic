@@ -1,6 +1,5 @@
 import React, {FunctionComponent} from 'react';
 import {
-  SafeAreaView,
   Platform,
   Linking,
   Image,
@@ -9,11 +8,13 @@ import {
   ScrollView,
   View,
 } from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import Icon from '@react-native-vector-icons/material-icons';
+import MaterialDesignIcon from '@react-native-vector-icons/material-design-icons';
 import TabProps from '../types/TabProps';
 import {Title, Paragraph} from 'react-native-paper';
 import {Language} from '../types';
 import globalStyles from '../styles/globalStyles';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const Links: FunctionComponent<TabProps> = ({language, navigation}) => {
   const getDescription = () => {
@@ -146,7 +147,7 @@ const Links: FunctionComponent<TabProps> = ({language, navigation}) => {
             flexDirection: 'row',
             justifyContent: 'space-evenly',
           }}>
-          <Icon name="cellphone" size={75} />
+          <Icon name="phone-android" size={75} />
           <TouchableOpacity onPress={openAwalIwass}>
             <Image
               source={require('../images/logo.png')}
@@ -187,7 +188,7 @@ const Links: FunctionComponent<TabProps> = ({language, navigation}) => {
             flexDirection: 'row',
             justifyContent: 'space-evenly',
           }}>
-          <Icon name="cellphone" size={75} />
+          <Icon name="phone-android" size={75} />
           <TouchableOpacity onPress={openTachelhitApp}>
             <Image
               source={require('../images/tachelhitinfo.png')}

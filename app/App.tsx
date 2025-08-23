@@ -2,7 +2,7 @@ import React, {useState, useEffect, useCallback} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator, Header} from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import Icon from '@react-native-vector-icons/material-design-icons';
 import {DefaultTheme, Provider as PaperProvider} from 'react-native-paper';
 import Home from './components/Home';
 import Audio from './components/Audio';
